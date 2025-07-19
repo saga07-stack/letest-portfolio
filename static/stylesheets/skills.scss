@@ -1,0 +1,246 @@
+:root{
+    --bar-animation-duration: 3s;
+    --secondary-accent: #ff5252;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 12;
+    // padding-top: 100px;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.288);
+    // backdrop-filter: 'blur';
+}
+
+.open-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    background-color: var(--light-color);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.primary-btn, .secondary-btn{
+    padding: 14px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.primary-btn{
+    background-color: var(--accent-color);
+    border: none;
+    // padding: 14px 16px;
+    // border-radius: 4px;
+    // font-weight: 600;
+    // font-size: 14px;
+}
+.secondary-btn{
+    background-color: transparent;
+    border: 1px solid var(--secondary-accent);
+    color: var(--secondary-accent);
+}
+
+#skills{
+    padding-top: 200px;
+
+    button{
+        text-transform: uppercase;
+    }
+
+    .section-description{
+        >p{
+            width: 35vw;
+        }
+    }
+
+    .modal-content{
+        width: 60vw;
+
+        >*:not(:last-child){
+            margin-bottom: 18px;
+        }
+        >h1{
+            text-align: center;
+        }
+
+        >div:last-child{
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+        input{
+            padding: 14px 14px;
+            border: none;
+            background-color: var(--dark-color);
+            border-radius: 4px;
+            width: 100%;
+            height: 8vh;
+        }
+
+        #skills-form{
+            display: flex;
+            gap: 10px;
+    
+            >div{
+                display: flex;
+                flex-direction: column;
+            }
+            
+            
+            input:not(:last-child){
+                margin-bottom: 15px;
+            }
+
+            #skills-form-column{
+                flex-shrink: 0;
+                // flex-grow: 1;
+                flex-basis: 80%;
+                // >input{
+                //     width: 30vw;
+                // }
+            }
+
+            #proficiency-form-column{
+                // flex-shrink: 1;
+                // flex-grow: 0;
+                >input{
+                    width: 100%;
+                }
+                // flex-basis: 30%;
+                // >input{
+                //     width: 10vw;
+                // }
+            }
+        }
+    }
+
+}
+
+
+#skills-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    padding: 20px 100px;
+    gap: 40px;
+
+    .skills-card{
+        height: 320px;
+        // width: 100px;
+        background-color: var(--light-color);
+        padding: 30px 40px;
+
+        >h4{
+            margin-bottom: 15px;
+        }
+
+        .skill{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            color: var(--secondary-text-color);
+        }
+
+        .skill-bar{
+            border-radius: 30px;
+            border: 1px solid var(--accent-color);
+            padding: 2px;
+            margin-bottom: 10px;
+
+            .bar{
+                background-color: var(--accent-color);
+                height: 2px;
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+
+.skill-bar .html{
+    width: 90%;
+    animation: html var(--bar-animation-duration);
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+
+
+.skill-bar .css{
+    width: 85%;
+    animation: css var(--bar-animation-duration);
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+
+
+
+.skill-bar .js{
+    width: 80%;
+    animation: js var(--bar-animation-duration);
+}
+
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+
+
+.skill-bar .php{
+    width: 75%;
+    animation: php var(--bar-animation-duration);
+}
+
+@keyframes php{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+
+
+.skill-bar .wordpress{
+    width: 75%;
+    animation: wordpress var(--bar-animation-duration);
+}
+
+@keyframes wordpress{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/stylesheets/index.css"/>
+    <link rel="stylesheet" href="static/stylesheets/footer.css">
+    <link rel="stylesheet" href="static/stylesheets/skills.css">
+    <script src="static/scripts/skills-script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"><img id="logo" src="./imgWithSaga/download.svg"  alt="Logo" aria-hidden="true"></a>
+            <ul>
+                <li><a class="navLinks" href="./index.html">Home</a></li>
+                <li><a class="navLinks active-link" href="./skills.html">Skills</a></li>
+                <li><a class="navLinks" href="#">Education</a></li>
+                <li><a class="navLinks" href="#">Projects</a></li>
+                <li><a class="navLinks" href="#">Recommendations</a></li>
+                <li><a class="navLinks" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="skills">
+            <div class="section-description">
+                <h1 id="section-heading-skills">Skills & Languages</h1>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</p>
+            </div>
+            <div id="skills-grid">
+                <div class="skills-card">
+                    <h4>Front End Development</h4>
+                    <div class="skill-bars-container">
+                        <div class="skill"><span>Html</span><span>90%</span></div>
+                        <div class="skill-bar">
+                            <div class="bar html"></div>
+                        </div>
+                        <div class="skill"><span>Css</span><span>85%</span></div>
+                        <div class="skill-bar">
+                            <div class="bar css"></div>
+                        </div>
+                        <div class="skill"><span>Js</span><span>80%</span></div>
+                        <div class="skill-bar">
+                            <div class="bar js"></div>
+                        </div>
+                        <div class="skill"><span>PHP</span><span>5%</span></div>
+                        <div class="skill-bar">
+                            <div class="bar php"></div>
+                        </div>
+                            <div class="skill"><span>Wordpress</span><span>0%</span></div>
+                        <div class="skill-bar">
+                            <div class="bar wordpress"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h4>Languages</h4>
+                    <div class="skill-bars-container">
+                        <div class="skill"><span>Hindi</span><span>70%</span></div>
+                        <div class="skill-bar">
+                            <div class="bar html"></div>
+                        </div>
+                        <div class="skill"><span>English</span><span>85%</span></div>
+                        <div class="skill-bar">
+                            <div class="bar css"></div>
+                        </div>
+                        <div class="skill"><span>japanese</span><span>65%</span></div>
+                        <div class="skill-bar">
+                            <div class="bar css"></div>
+                        </div>
+                        <div class="skill"><span>nepali</span><span>99%</span></div>
+                        <div class="skill-bar">
+                            <div class="bar css"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h4>Back End Development</h4>
+                    <div class="skill-bars-container">
+                        <div class="skill"><span>Node</span><span>90%</span></div>
+                        <div class="skill-bar">
+                            <div class="bar html"></div>
+                        </div>
+                        <div class="skill"><span>SSR</span><span>85%</span></div>
+                        <div class="skill-bar">
+                            <div class="bar css"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <!-- <button id="add-skill-btn" class="primary-btn">Add Skill</button> -->
+            </div>
+            <div class="modal" id="add-skill-modal">
+                <div class="modal-content">
+                    <h1>Add Skill</h1>
+                    <h3>Domain</h3>
+                    <input type="text" placeholder="Front End Developer" id="domain"/>
+                    <h3>Skills</h3>
+                    <form id="skills-form">
+                        <div id="skills-form-column">
+                            <h5>Skill</h5>
+                            <input type="text" class="skill-input" name="skill1"/>
+                            <input type="text" class="skill-input" name="skill2"/>
+                            <input type="text" class="skill-input" name="skill3"/>
+                            <input type="text" class="skill-input" name="skill4"/>
+                            <input type="text" class="skill-input" name="skill5"/>
+                        </div>
+                        <div id="proficiency-form-column">
+                            <h5>Proficiency (%)</h5>
+                            <input type="text" class="proficiency-input" name="prof1">
+                            <input type="text" class="proficiency-input" name="prof2">
+                            <input type="text" class="proficiency-input" name="prof3">
+                            <input type="text" class="proficiency-input" name="prof4">
+                            <input type="text" class="proficiency-input" name="prof5">
+                        </div>
+                    </form>
+                    <div>
+                        <button class="primary-btn" type="submit" form="skills-form">ADD SKILL</button>
+                        <button id="close-btn" class="secondary-btn">CANCEL</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <img src="static/assets/Logo2.svg" alt="logo">
+            <img src="static/assets/Logo3.svg" alt="logo">
+            <img src="static/assets/Logo4.svg" alt="logo">
+            <img src="static/assets/Logo5.svg" alt="logo">
+        </div>
+        <div id="footer-logo">
+            <a href="#"><img src="static/assets/Logo.svg" alt=""></a>
+        </div>
+        <div id="footer-links">
+            <!-- <div> -->
+                <div id="ratings">
+                    <img src="static/assets/rating_logo1.png" alt="">
+                    <p>4.5/5 Rating on Lorem</p>
+                    <img src="static/assets/rating_logo2.png" alt="">
+                    <p>9/10 Rating on Ipsum</p>
+                    <img src="static/assets/rating_logo3.png" alt="">
+                    <p>4.5/5 Rating on Dorel</p>
+                </div>
+            <!-- </div> -->
+            <div id="quick-links">
+                <h3>Quick Links</h3>
+                <h5><a href="./index.html">Home</a></h5>
+                <h5><a href="./skills.html">Skills</a></h5>
+                <h5><a href="#">Education</a></h5>
+                <h5><a href="#">Projects</a></h5>
+                <h5><a href="#">Recommendations</a></h5>
+            </div>
+            <div id="portfolio">
+                <h3>Portfolio</h3>
+                <h5>Frontend Development</h5>
+                <h5>Backend Development</h5>
+                <h5>Website Design</h5>
+                <h5>Machine Learning</h5>
+                <h5>Problem Solving & DSA</h5>
+            </div>
+            <div id="connect" class="">
+                <h3>Connect</h3>
+                <img src="static/assets/LinkedIn.svg" alt="">
+                <img src="static/assets/Instagram.svg" alt="">
+                <img src="static/assets/Facebook.svg" alt="">
+            </div>
+        </div>
+        <div id="copyright"><img src="static/assets/copyright.svg" alt="">2024 Copyright, All Rights Reserved.</div>
+    </footer>
+</body>
+</html>
