@@ -144,11 +144,13 @@ p {
   align-items: flex-end;
   height: 30rem;
   width: 20rem;
+
 }
 #hero > #hero-img-container > img {
   z-index: 0;
-  height: 250px;
-  margin-left: 9%;
+  height: 150px;
+  margin-left: 50%;
+
 }
 .section-heading{
   font-size: large;
