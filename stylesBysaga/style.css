@@ -330,17 +330,19 @@ margin: 0%;
 }
 
 #carousel {
-  max-width: 85vw;
+  max-width: 200%;
+  max-height:200% ;
 }
 #carousel .carousel-card {
-  padding: 20px;
+  padding: 15px;
   background-color: var(--light-color);
   border: 2px solid var(--tag-border-color);
-  margin: 0 14px;
+  margin: 0 4px;
+  max-height: 90rem;
 }
 #carousel .carousel-card .profile-rating {
   display: flex;
-  gap: 12px;
+  gap: 6px;
   margin-bottom: 18px;
 }
 #carousel .carousel-card .profile {
@@ -349,31 +351,37 @@ margin: 0%;
   
 }
 #carousel .carousel-card .profile > img{
-  height: 20px;
+  height: 10px;
 }
 #carousel .carousel-card .profile > span {
   margin-left: 22px;
   font-size: smaller;
+  color: blue;
+}
+#carousel .carousel-card .profile > span>p{
+  color: red;
+  font-size: 4px;
 }
 #carousel .carousel-card h4 {
   font-size: 3px;
   font-weight: 500;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
+  
   
 }
 #carousel .carousel-card > p {
   font-size: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-transform: capitalize;
-  color: red;
+  
 }
-#carousel .carousel-card .profile >p{
-  color: red;
-}
+
+.profile
 #lmyi-contact-container {
   display: block;
-  padding: 40px 100px;
-  gap: 25px;
+
+  padding: 20px 50px;
+  gap: 15px;
 }
 
 #leave-me-your-info {
@@ -388,13 +396,13 @@ margin: 0%;
   display: flex;
   flex-direction: column;
   background-color: var(--light-color);
-  padding: 28px 32px;
+  padding: 14px 16px;
   color: var(--secondary-text-color);
 }
 #leave-me-your-info-form > div {
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
+  margin-bottom: 15px;
   gap: 4px;
   font-size: 18px;
   font-weight: 500;
@@ -509,7 +517,10 @@ footer {
   padding: 1px;
 }
 #quick-links{
-margin-right: 2%;
+  display: grid;
+  grid-template-columns:(3fr,1fr,1fr);
+  gap: none;
+margin-right: 0%;
 
 }
 footer a:hover {
@@ -522,14 +533,14 @@ footer > div {
 }
 footer > div:first-child {
   justify-content: center;
-  gap: 10vw;
-  margin: 2px 0 32px 0;
+  gap: 1vw;
+  margin: 2px 0 12px 0;
 }
 footer #footer-logo {
   display: flex;
   justify-content: flex-start;
-  margin-left: 90px;
-  margin-bottom: 55px;
+  margin-left: 10px;
+  margin-bottom: 5px;
 }
 footer #footer-links > div:first-child > * {
   margin-right: 50px;
@@ -549,10 +560,10 @@ footer #connect {
   flex-direction: column;
 }
 footer #connect > img {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 footer #connect > h1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 footer #copyright {
   justify-content: center;
@@ -564,7 +575,10 @@ footer #copyright {
   color: var(--secondary-text-color);
 }
 
+#connect>img{
+height: 18px;
 
+}
 
 }  
    
