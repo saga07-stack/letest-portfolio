@@ -160,7 +160,7 @@ p {
 }
 /* ===============--animated cubes-=--==-==-=-====-=-=-== */
 .creative{
-   animation: rotate 12s linear infinite;
+
 }
 .vector {
   bottom: 95px; 
@@ -178,13 +178,12 @@ right: 75px;
 #yellow-square {
   top: 160px;
   right: 58px;
-    animation: pulse 2.5s ease-in-out infinite;
 
 }
 #yellow-square1 {
   top: 160px;
   right: 158px;
-    animation: pulse 2.5s ease-in-out infinite;
+
 
 }
 #vector-green2 {
@@ -198,13 +197,13 @@ right: 75px;
 #vector-blue{
  top: 130px;
   left: 240px; 
-    animation: pulse 2.5s ease-in-out infinite;
+
 
 }
 #vector-red{
   top: 180px;
    right: 100px;
-    animation: pulse 2.5s ease-in-out infinite;
+
   
 }
 
@@ -214,29 +213,7 @@ right: 75px;
    
 }
 
- /* .yellow-circle { top: 0; left: 50%; transform: translateX(-50%); }
-  .yellow-circle1 { bottom: 0; left: 50%; transform: translateX(-50%); }
-  .green-circle { top: 50%; left: 0; transform: translateY(-50%); }
-  .green-circle1 { top: 50%; right: 0; transform: translateY(-50%); }
- .yellow-square { top: 20%; left: 20%; }
-  .yellow-square1 { bottom: 20%; right: 20%; }
- .blue-square { top: 20%; left: 20%; }
-  .blue-square1 { bottom: 20%; right: 20%; }
-
-  @keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-
-  @keyframes pulse {
-    0%, 100% { transform: rotate(45deg) scale(1); }
-    50% { transform: rotate(45deg) scale(1.2); }
-  }
-
-  @keyframes bounce {
-    0%, 100% { transform: translate(-50%, -50%) translateY(0); }
-    50% { transform: translate(-50%, -50%) translateY(-10px); }
-  } */
+ 
 
 /* -----=======---==-==-=-====-=-==-=-=-====- */
 /*  */
