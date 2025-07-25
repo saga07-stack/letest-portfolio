@@ -33,7 +33,7 @@ nav > * {
   padding: 0;
 }
 nav #logo {
-    height: 20px;
+    height: 30px;
   margin-left: 0rem;
 }
 nav > ul {
@@ -255,6 +255,7 @@ margin: 0%;
 } */
 #projects {
   padding: 40px 90px;
+  /* margin-right: 10%; */
 }
 
 #project-grid {
@@ -272,6 +273,7 @@ margin: 0%;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1019607843);
   margin-bottom: 5%;
   width: 15rem;
+ 
 }
 #project-grid > .project-card > .project-card-content {
   display: flex;
@@ -280,6 +282,7 @@ margin: 0%;
   padding: 16px 16px;
   gap: 4px;
   text-transform: capitalize;
+   margin-right: 20%;
 }
 #project-grid > .project-card > .project-card-content > h4 {
   font-weight: 500;
@@ -369,6 +372,7 @@ margin: 0%;
   display: block;
   padding: 20px 50px;
   gap: 15px;
+  
 }
 
 #leave-me-your-info {
@@ -423,8 +427,10 @@ margin: 0%;
 #contact-info {
   flex-shrink: 0;
   flex-grow: 1;
-  width: 80%;
+  width: 70%;
+  /* margin-right: 20%; */
 }
+
 /* this card making extra width  
 and the footer is also making a extra width 
 and if i want to make a animated circle then i
@@ -435,7 +441,9 @@ otherwise it also make the small devices extra width */
   display: grid;
   grid-auto-rows: minmax(100px, auto);
   gap: 5px;
-  width: 80%;
+  width: 60%;
+  
+
 }
 /* ============----==--=-==-=-=--=-=------ */
 #contact-info #contact-info-cards-container .contact-card {
@@ -500,9 +508,9 @@ gap: none;
 }
 
 footer {
-  display: block;
+  display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
 }
 #footer-links{
   display: grid;
@@ -533,14 +541,14 @@ footer {
 }
 #quick-links > h5 {
   font-size: 1px;
-  color: red;
+  /* color: red; */
 }
 #portfolio > h3{
   margin-left: 34%;
 }
 #portfolio > h5{
   font-size: 10px;
-color: red;
+/* color: red; */
 margin-left: 34%;
 }
 
