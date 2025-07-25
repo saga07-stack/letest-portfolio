@@ -310,16 +310,24 @@ p {
   padding: 16px 32px;
   background-color: var(--accent-color);
 }
-
+#tryout1{
+  display: grid;
+  row-gap: 15px;
+}
 #contact-info {
   flex-shrink: 0;
   flex-grow: 1;
+}
+.tag{
+    color: red;
+
 }
 #contact-info #contact-info-cards-container {
   color: var(--secondary-text-color);
   display: grid;
   grid-auto-rows: minmax(100px, auto);
   gap: 15px;
+ 
 }
 #contact-info #contact-info-cards-container .contact-card {
   background-color: var(--light-color);

@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) and (max-width: 800px){
+@media screen and (min-width: 500px) and (max-width: 750px){
 
 a {
   text-decoration: none;
@@ -450,12 +450,25 @@ margin: 0%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5%;
+   margin: 2rem;
 }
 #contact-location{
     gap: 10px;
-    width: 20rem;
+    width: 10rem;
 }
-
+#contact-location> div{
+  font-size: 10px;
+}
+#contact-messaging {
+  width:15rem ;
+}
+#contact-messaging> div{
+  font-size: 10px;
+  
+}
+.contact-card> div>span{
+font-size: 13px;
+}
 /* this card making extra width  
 and the footer is also making a extra width 
 and if i want to make a animated circle then i
@@ -651,13 +664,20 @@ height: 18px;
 
 }
 
-}  
-   
-   
-   
-   
     #project-imgs{
         height:250px;
-        width:100 px;
+          
     border-radius: 15px;
     }
+.nodeJs{
+  height: 10px;
+}
+}  
+   
+   #project-imgs{
+        height:250px;
+  
+    border-radius: 15px;
+    }
+   
+   
